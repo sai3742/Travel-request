@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Travel Expences</name>
+        <order/>
+        <roles>x_172325_travel_ex.user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-12 18:05:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe3a0cbb37115300b06c097973990ece</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Expences</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+        <sys_update_name>sys_ui_application_fe3a0cbb37115300b06c097973990ece</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-12 18:05:24</sys_updated_on>
+    </sys_ui_application>
+</record_update>

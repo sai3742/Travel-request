@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Fiscal Year" max_length="40" name="x_172325_travel_ex_fiscal_year" type="collection">
+        <element label="Fiscal Year" max_length="40" name="fiscal_year" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Quarter" max_length="40" name="quarter" type="string"/>
+    </element>
+</database>

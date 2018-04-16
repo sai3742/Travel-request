@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Project" max_length="40" name="x_172325_travel_ex_project" type="collection">
+        <element display="true" label="Company Name" max_length="40" name="company_name" type="string"/>
+        <element label="Fiscal Year" max_length="40" name="fiscal_year" reference="x_172325_travel_ex_fiscal_year" type="reference"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+    </element>
+</database>

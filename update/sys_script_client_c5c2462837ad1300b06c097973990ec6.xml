@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>air_fare</field>
+        <global>true</global>
+        <messages/>
+        <name>Date Quater Validation</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+   var strt = g_form.getValue('date_from');
+	var f = g_form.getValue('u_fiscal');
+	if(strt!="" && f==1){
+	var ajax = new GlideAjax('QuaterDate');
+	ajax.addParam('sysparm_name','monCalc');
+	ajax.addParam('sysparm_strt',strt);
+	ajax.getXML(duration1);
+	function duration1(response){
+		var answer = parseInt(response.responseXML.documentElement.getAttribute('answer'));
+		if(answer>3 && answer<6){
+			
+		}
+		else{
+			g_form.addErrorMessage(" The date is within the  Quarter limits");
+			//return false;
+			g_form.submitted = false;
+		}
+	}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-15 11:03:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c5c2462837ad1300b06c097973990ec6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Date Quater Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+        <sys_update_name>sys_script_client_c5c2462837ad1300b06c097973990ec6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-15 15:39:56</sys_updated_on>
+        <table>x_172325_travel_ex_travel_expences_table</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="used_amount" label="Used amount" language="en" table="x_172325_travel_ex_budget">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>used_amount</element>
+            <help/>
+            <hint/>
+            <label>Used amount</label>
+            <language>en</language>
+            <name>x_172325_travel_ex_budget</name>
+            <plural>Used amounts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 17:26:46</sys_created_on>
+            <sys_id>ac941ed037a51300b06c097973990e3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Used amount</sys_name>
+            <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+            <sys_update_name>sys_documentation_x_172325_travel_ex_budget_used_amount_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 17:26:46</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_172325_travel_ex_travel_expences_table" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>ddcd7e1c37e51300b06c097973990e16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requestor</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>51cd7e1c37e51300b06c097973990e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>d1cd7e1c37e51300b06c097973990e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>project</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>55cd7e1c37e51300b06c097973990e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fiscal_year</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>d5cd7e1c37e51300b06c097973990e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>duration</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>59cd7e1c37e51300b06c097973990e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>total</element>
+            <list_id display_value="x_172325_travel_ex_travel_expences_table" element="NULL" name="x_172325_travel_ex_travel_expences_table" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">59cd7e1c37e51300b06c097973990e16</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_id>d9cd7e1c37e51300b06c097973990e17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_172325_travel_ex_travel_expences_table</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-14 20:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>59cd7e1c37e51300b06c097973990e16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_172325_travel_ex_travel_expences_table</sys_name>
+            <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+            <sys_update_name>sys_ui_list_x_172325_travel_ex_travel_expences_table_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-14 20:26:46</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

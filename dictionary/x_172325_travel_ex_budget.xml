@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Budget" max_length="40" name="x_172325_travel_ex_budget" type="collection">
+        <element label="Budget amount" max_length="20" name="budget_amount" type="currency"/>
+        <element label="Remaining amount" max_length="20" name="remaining_amount" type="currency"/>
+        <element label="Requested amount" max_length="20" name="requested_amount" type="currency"/>
+        <element label="Used amount" max_length="20" name="used_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Fiscal" mandatory="true" max_length="40" name="u_fiscal" type="string">
+            <choice>
+                <element label="18 Q1" sequence="0" value="1"/>
+                <element label="18 Q2" sequence="1" value="2"/>
+                <element label="18 Q3" sequence="2" value="3"/>
+                <element label="18 Q4" sequence="3" value="4"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_172325_travel_ex.AjaxDurCalc</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AjaxDurCalc</name>
+        <script><![CDATA[var AjaxDurCalc = Class.create();
+AjaxDurCalc.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	durCalc: function(){
+		var gdt1 = new GlideDateTime(this.getParameter('sysparm_strt'));
+		var gdt2 = new GlideDateTime(this.getParameter('sysparm_end'));
+		var duration = GlideDateTime.subtract(gdt1,gdt2);
+		
+		return(duration.getDayPart()+1);
+		
+	},
+	
+	type: 'AjaxDurCalc'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-13 06:32:54</sys_created_on>
+        <sys_id>f8f4fa7b37955300b06c097973990e5a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>AjaxDurCalc</sys_name>
+        <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+        <sys_update_name>sys_script_include_f8f4fa7b37955300b06c097973990e5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-13 08:57:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

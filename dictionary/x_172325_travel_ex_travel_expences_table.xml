@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Travel Expences Table" max_length="40" name="x_172325_travel_ex_travel_expences_table" type="collection">
+        <element default="0" label="Air Fare" max_length="20" name="air_fare" type="currency"/>
+        <element display="true" label="Budget" max_length="32" name="budget" reference="x_172325_travel_ex_budget" type="reference"/>
+        <element default="0" label="Car Rental" max_length="20" name="car_rental" type="currency"/>
+        <element label="Date From" max_length="40" name="date_from" type="glide_date"/>
+        <element label="Date Till" max_length="40" name="date_till" type="glide_date"/>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Duration" max_length="40" name="duration" read_only="true" type="integer"/>
+        <element label="Fiscal Year" max_length="40" name="fiscal_year" reference="x_172325_travel_ex_fiscal_year" type="reference"/>
+        <element default="0" label="Hotel" max_length="20" name="hotel" type="currency"/>
+        <element label="Justification" max_length="100" name="justification" type="string"/>
+        <element label="Location From" max_length="40" name="location_from" type="string"/>
+        <element label="Location To" max_length="40" name="location_to" type="string"/>
+        <element default="0" label="Meals" max_length="20" name="meals" type="currency"/>
+        <element label="Notes" max_length="40" name="notes" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="0" label="Others" max_length="20" name="others" type="currency"/>
+        <element label="Project" mandatory="true" max_length="40" name="project" reference="x_172325_travel_ex_project" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requestor" max_length="32" name="requestor" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element choice="3" default="1" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element label="Draft" sequence="0" value="1"/>
+                <element label="Requested" sequence="1" value="2"/>
+                <element label="Rejected" sequence="2" value="4"/>
+                <element label="Approved" sequence="3" value="3"/>
+                <element label="cancelled" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element default="0" label="Total" max_length="20" name="total" read_only="true" type="currency"/>
+        <element default="0" label="Training" max_length="20" name="training" type="currency"/>
+        <element label="Travel Cost Funded" max_length="40" name="travel_cost_funded" type="boolean"/>
+        <element label="Travel Reason" max_length="100" name="travel_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Fiscal" mandatory="true" max_length="40" name="u_fiscal" type="string">
+            <choice>
+                <element label="18 Q1" sequence="0" value="1"/>
+                <element label="18 Q2" sequence="1" value="2"/>
+                <element label="18 Q3" sequence="2" value="3"/>
+                <element label="18 Q4" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="requested_for"/>
+        </index>
+        <index name="index2">
+            <element name="department"/>
+        </index>
+        <index name="index3">
+            <element name="requestor"/>
+        </index>
+        <index name="index4">
+            <element name="budget"/>
+        </index>
+    </element>
+</database>

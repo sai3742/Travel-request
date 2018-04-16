@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-14 15:21:38</sys_created_on>
+        <sys_id>aa073d5037651300b06c097973990e5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_172325_travel_ex_travel_expences_table.*.x_172325_travel_ex.Dummy</sys_name>
+        <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+        <sys_security_acl display_value="x_172325_travel_ex_travel_expences_table.*">87de41d437e11300b06c097973990e85</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_aa073d5037651300b06c097973990e5e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-14 15:21:38</sys_updated_on>
+        <sys_user_role display_value="x_172325_travel_ex.Dummy" name="x_172325_travel_ex.Dummy">fba7759037651300b06c097973990e67</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
