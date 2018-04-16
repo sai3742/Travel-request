@@ -14,7 +14,7 @@
         <sys_update_name>sys_security_acl_role_aa073d5037651300b06c097973990e5e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-04-14 15:21:38</sys_updated_on>
-        <sys_user_role display_value="x_172325_travel_ex.Dummy" name="x_172325_travel_ex.Dummy">fba7759037651300b06c097973990e67</sys_user_role>
+        <sys_user_role display_value="x_172325_travel_ex.user role" name="x_172325_travel_ex.user role">fba7759037651300b06c097973990e67</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
 </record_update>

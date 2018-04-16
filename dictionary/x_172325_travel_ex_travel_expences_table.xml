@@ -33,7 +33,7 @@
         <element default="0" label="Training" max_length="20" name="training" type="currency"/>
         <element label="Travel Cost Funded" max_length="40" name="travel_cost_funded" type="boolean"/>
         <element label="Travel Reason" max_length="100" name="travel_reason" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Fiscal" mandatory="true" max_length="40" name="u_fiscal" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Fiscal" max_length="40" name="u_fiscal" type="string">
             <choice>
                 <element label="18 Q1" sequence="0" value="1"/>
                 <element label="18 Q2" sequence="1" value="2"/>

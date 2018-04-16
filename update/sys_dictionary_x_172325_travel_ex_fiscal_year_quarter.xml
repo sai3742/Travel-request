@@ -7,10 +7,10 @@
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Quarter</column_label>
+        <column_label>Fiscal Type</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -50,14 +50,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-13 05:59:05</sys_created_on>
         <sys_id>0d9da6f337955300b06c097973990e71</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Quarter</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Fiscal Type</sys_name>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_dictionary_x_172325_travel_ex_fiscal_year_quarter</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-13 05:59:05</sys_updated_on>
+        <sys_updated_on>2018-04-16 11:06:11</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

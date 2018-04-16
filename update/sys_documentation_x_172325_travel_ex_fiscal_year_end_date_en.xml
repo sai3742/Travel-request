@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="quarter" label="Fiscal Type" language="en" table="x_172325_travel_ex_fiscal_year">
+    <sys_documentation element="end_date" label="End Date" language="en" table="x_172325_travel_ex_fiscal_year">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>quarter</element>
+            <element>end_date</element>
             <help/>
             <hint/>
-            <label>Fiscal Type</label>
+            <label>End Date</label>
             <language>en</language>
             <name>x_172325_travel_ex_fiscal_year</name>
-            <plural>Fiscal Types</plural>
+            <plural>End Dates</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-13 05:59:05</sys_created_on>
-            <sys_id>8d9da6f337955300b06c097973990e72</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Fiscal Type</sys_name>
+            <sys_created_on>2018-04-16 11:06:30</sys_created_on>
+            <sys_id>69b017f037e11300b06c097973990e37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>End Date</sys_name>
             <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
             <sys_policy/>
             <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-            <sys_update_name>sys_documentation_x_172325_travel_ex_fiscal_year_quarter_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_172325_travel_ex_fiscal_year_end_date_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-16 11:06:11</sys_updated_on>
+            <sys_updated_on>2018-04-16 11:06:30</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

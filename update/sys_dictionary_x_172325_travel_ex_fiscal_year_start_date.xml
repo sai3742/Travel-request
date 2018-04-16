@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="state" table="x_172325_travel_ex_travel_expences_table">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="start_date" table="x_172325_travel_ex_fiscal_year">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -12,13 +12,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>State</column_label>
+        <column_label>Start Date</column_label>
         <comments/>
         <create_roles/>
-        <default_value>1</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -28,18 +28,18 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>state</element>
+        <element>start_date</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <internal_type display_value="">glide_date</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_172325_travel_ex_travel_expences_table</name>
+        <name>x_172325_travel_ex_fiscal_year</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -53,16 +53,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-12 18:40:02</sys_created_on>
-        <sys_id>066d443f37115300b06c097973990e62</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>State</sys_name>
+        <sys_created_on>2018-04-16 11:06:29</sys_created_on>
+        <sys_id>8600db7037e11300b06c097973990e4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Start Date</sys_name>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>sys_dictionary_x_172325_travel_ex_travel_expences_table_state</sys_update_name>
+        <sys_update_name>sys_dictionary_x_172325_travel_ex_fiscal_year_start_date</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-16 08:53:51</sys_updated_on>
+        <sys_updated_on>2018-04-16 11:06:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

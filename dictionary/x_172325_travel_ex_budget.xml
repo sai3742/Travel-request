@@ -2,6 +2,7 @@
 <database>
     <element label="Budget" max_length="40" name="x_172325_travel_ex_budget" type="collection">
         <element label="Budget amount" max_length="20" name="budget_amount" type="currency"/>
+        <element label="Fiscal Year" max_length="32" name="fiscal_year" reference="x_172325_travel_ex_fiscal_year" type="reference"/>
         <element label="Remaining amount" max_length="20" name="remaining_amount" type="currency"/>
         <element label="Requested amount" max_length="20" name="requested_amount" type="currency"/>
         <element label="Used amount" max_length="20" name="used_amount" type="currency"/>
@@ -13,5 +14,8 @@
                 <element label="18 Q4" sequence="3" value="4"/>
             </choice>
         </element>
+        <index name="index">
+            <element name="fiscal_year"/>
+        </index>
     </element>
 </database>
