@@ -5,22 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_172325_travel_ex_fiscal_year</name>
+        <name>x_172325_travel_ex_budget</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-12 19:05:53</sys_created_on>
-        <sys_id>f818d0f337515300b06c097973990ec9</sys_id>
+        <sys_created_on>2018-04-14 17:23:40</sys_created_on>
+        <sys_id>bc103495db2113008252f6dfbf9619f3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_172325_travel_ex_fiscal_year</sys_name>
+        <sys_name>x_172325_travel_ex_budget</sys_name>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>ua_table_licensing_config_f818d0f337515300b06c097973990ec9</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_bc103495db2113008252f6dfbf9619f3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-12 19:05:53</sys_updated_on>
+        <sys_updated_on>2018-04-14 17:23:40</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

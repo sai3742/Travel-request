@@ -54,15 +54,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-14 17:23:39</sys_created_on>
-        <sys_id>76d3d2d037a51300b06c097973990e7a</sys_id>
+        <sys_id>e0103495db2113008252f6dfbf9619e5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_172325_travel_ex_budget</sys_name>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>sys_dictionary_x_172325_travel_ex_budget_null</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-14 17:23:39</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_172325_travel_ex_budget_NULL</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-04-17 12:41:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

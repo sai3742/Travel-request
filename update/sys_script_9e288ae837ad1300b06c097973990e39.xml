@@ -30,24 +30,17 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	// Add your code here
 	var gdt1 = new GlideDateTime(current.date_from);
-	var duration = gdt1.getMonthUTC();
-	var c = current.u_fiscal;
-	//if(current.u_fiscal==1){if(duration>3 && duration<6){}}
-	if(current.u_fiscal==1 && (duration>3 && duration<7)){}
-	else if(current.u_fiscal==2 && (duration>6 && duration<10)){}
-	else if(current.u_fiscal==3 && (duration>9 && duration<13)){}
-	else if(current.u_fiscal==4 && (duration>0 && duration<4)){}
-		//else if (current.u_fiscal == 2){if(duration>6 && duration<10){			}}
-		//else if (current.u_fiscal == 3){if(duration>9 && duration<13){			}}
-			//else if (current.u_fiscal == 4){if(duration>0 && duration<4){			}}
-			
-		
-		else{
-			gs.addErrorMessage(" The date is within the  Quarter limits");
-			current.setAbortAction(true);
-								}
+	var gdt2 = new GlideDateTime(current.fiscal_year.start_date);
+	var gdt3 = new GlideDateTime(current.fiscal_year.end_date);
+	var duration = GlideDateTime.subtract(gdt1,gdt2);
+	var duration1 = GlideDateTime.subtract(gdt1,gdt3);
+	if(duration.getNumericValue()<=0 && duration1.getNumericValue()>=0){
+		}
+	else{
+		gs.addErrorMessage("The Start must be withing the quarter limits");
+	}
+	
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -56,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9e288ae837ad1300b06c097973990e39</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>88</sys_mod_count>
         <sys_name>Date Quater Validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
@@ -64,7 +57,7 @@
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_script_9e288ae837ad1300b06c097973990e39</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-15 15:55:42</sys_updated_on>
+        <sys_updated_on>2018-04-18 11:28:03</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

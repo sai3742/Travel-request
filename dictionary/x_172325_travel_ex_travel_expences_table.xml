@@ -42,15 +42,21 @@
             </choice>
         </element>
         <index name="index">
-            <element name="requested_for"/>
+            <element name="fiscal_year"/>
         </index>
         <index name="index2">
-            <element name="department"/>
+            <element name="project"/>
         </index>
         <index name="index3">
-            <element name="requestor"/>
+            <element name="requested_for"/>
         </index>
         <index name="index4">
+            <element name="department"/>
+        </index>
+        <index name="index5">
+            <element name="requestor"/>
+        </index>
+        <index name="index6">
             <element name="budget"/>
         </index>
     </element>

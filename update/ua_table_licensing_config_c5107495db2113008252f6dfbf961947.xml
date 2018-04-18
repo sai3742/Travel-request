@@ -13,13 +13,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-12 18:05:24</sys_created_on>
-        <sys_id>f63a0cbb37115300b06c097973990ea9</sys_id>
+        <sys_id>c5107495db2113008252f6dfbf961947</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_172325_travel_ex_travel_expences_table</sys_name>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>ua_table_licensing_config_f63a0cbb37115300b06c097973990ea9</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_c5107495db2113008252f6dfbf961947</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-04-12 18:05:24</sys_updated_on>
     </ua_table_licensing_config>

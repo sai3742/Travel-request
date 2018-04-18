@@ -4,5 +4,8 @@
         <element display="true" label="Company Name" max_length="40" name="company_name" type="string"/>
         <element label="Fiscal Year" max_length="40" name="fiscal_year" reference="x_172325_travel_ex_fiscal_year" type="reference"/>
         <element label="Location" max_length="40" name="location" type="string"/>
+        <index name="index">
+            <element name="fiscal_year"/>
+        </index>
     </element>
 </database>

@@ -19,14 +19,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_172325_travel_ex.user</roles>
+        <roles>x_172325_travel_ex.Manager</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-12 19:04:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6c710f337515300b06c097973990e4f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Projects</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_app_module_e6c710f337515300b06c097973990e4f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-12 19:04:38</sys_updated_on>
+        <sys_updated_on>2018-04-17 12:55:32</sys_updated_on>
         <timeline_page/>
         <title>Projects</title>
         <uncancelable>false</uncancelable>
