@@ -33,6 +33,7 @@
 			else{
 				g_form.clearMessages();
 				g_form.clearValue('duration');
+				g_form.clearValue('date_till');
 				g_form.addErrorMessage("The Date Till must be after the Date From");
 			}
 		
@@ -46,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>069e437737d55300b06c097973990eef</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Date Till validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
@@ -54,7 +55,7 @@
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_script_client_069e437737d55300b06c097973990eef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-13 10:38:01</sys_updated_on>
+        <sys_updated_on>2018-04-20 08:03:28</sys_updated_on>
         <table>x_172325_travel_ex_travel_expences_table</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

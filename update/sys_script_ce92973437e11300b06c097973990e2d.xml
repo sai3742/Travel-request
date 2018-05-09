@@ -30,17 +30,15 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
-	// Add your code here x_172325_travel_ex_travel_expences_table
-//	x_172325_travel_ex_budget
+	
 	var ttla = 0;
 	var all = new GlideRecord('x_172325_travel_ex_travel_expences_table');
 	all.addEncodedQuery("state=2");
 	all.addQuery('fiscal_year',current.fiscal_year);
-	//all.addEncodedQuery("fiscal_year.fiscal_yearSTARTSWITHFY18 Q1");
 	all.query();
 	while(all.next()){
-		ttla =parseFloat(ttla)+parseFloat(all.total);
-	}
+		ttla =parseInt(ttla)+parseInt(all.total);
+	}	
 	
 	var brec = new GlideRecord('x_172325_travel_ex_budget');
 	//brec.query();
@@ -48,6 +46,7 @@
 	brec.addQuery('fiscal_year',current.fiscal_year);
 	brec.query();
 	if(brec.next()){
+		
 		brec.requested_amount= ttla;
 		brec.update();
 	}
@@ -62,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce92973437e11300b06c097973990e2d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Copy total to requested</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
@@ -70,7 +69,7 @@
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_script_ce92973437e11300b06c097973990e2d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-16 11:41:41</sys_updated_on>
+        <sys_updated_on>2018-05-03 05:17:58</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

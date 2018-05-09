@@ -4,10 +4,10 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
-        <action_query>false</action_query>
-        <action_update>true</action_update>
-        <active>false</active>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -19,7 +19,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Find Total</name>
+        <name>Access Module</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,36 +29,33 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
+
 	// Add your code here
-	var af = parseFloat(current.getValue('air_fare'));
-	var hotel = parseFloat(current.getValue('hotel'));
-	var cr = parseFloat(current.getValue('car_rental'));
-	var tr = parseFloat(current.getValue('training'));
-	var meals = parseFloat(current.getValue('meals'));
-	var others = parseFloat(current.getValue('others'));
-	var total = af+hotel+cr+tr+meals+others;
-	current.setValue('total',total);
-	
+	if(gs.hasRole("x_172325_travel_ex.user")) { 
+	  var u = gs.getUserID(); 
+	 var qc = current.addQuery("requested_for",u);
+		//qc.addOrCondition('requested_for.manager',u);
+			
+	}
 	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-13 05:23:18</sys_created_on>
+        <sys_created_on>2018-04-19 10:36:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>fca36e3f37555300b06c097973990e01</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Find Total</sys_name>
+        <sys_id>e7262e75dba113008252f6dfbf9619fb</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Access Module</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>sys_script_fca36e3f37555300b06c097973990e01</sys_update_name>
+        <sys_update_name>sys_script_e7262e75dba113008252f6dfbf9619fb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-18 11:55:38</sys_updated_on>
+        <sys_updated_on>2018-04-19 12:03:52</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=fca36e3f37555300b06c097973990e01"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7262e75dba113008252f6dfbf9619fb"/>
 </record_update>
