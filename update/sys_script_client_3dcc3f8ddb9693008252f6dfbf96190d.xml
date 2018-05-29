@@ -1,26 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
         <field>date_from</field>
         <global>true</global>
         <messages/>
-        <name>Date From Validation</name>
-        <order/>
+        <name>Date Quater Validation</name>
+        <order>1000</order>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-  if (isLoading || newValue === '') {
-		return;
-	}
-	
-	
+   if (isLoading === '') {
+   
+	   return;
+   }
+if(newValue === ''){
+	g_form.clearValue('duration');
+	return;
+}
    //Type appropriate comment here, and begin script below
-	
-	var strt = g_form.getValue('date_from');
-	var end = g_form.getValue('date_till');
-	if(end!=""){
+	var mon = g_form.getReference('fiscal_year', dateFrom);
+	//g_form.addErrorMessage(mon);
+	function dateFrom(date){
+	var	strtDate = date.start_date;
+	var	endDate = date.end_date;
+	var st = g_form.getValue('date_from');
+// 		g_form.addInfoMessage(st);
+// 		g_form.addInfoMessage(strtDate);
+// 		g_form.addInfoMessage(endDate);
+	if(st>=strtDate && st<=endDate){
+		//g_form.clearMessages();
+		var strt = g_form.getValue('date_from');
+		var end = g_form.getValue('date_till');
+		if(end!=""){
 	var ajax = new GlideAjax('AjaxDurCalc');
 	ajax.addParam('sysparm_name','durCalc');
 	ajax.addParam('sysparm_strt',strt);
@@ -33,29 +46,39 @@
 			g_form.setValue('duration',answer);}
 			else{
 				g_form.clearMessages();
+				g_form.clearValue('date_from')
 				g_form.clearValue('duration');
 				g_form.addErrorMessage("The Date Till must be after the Date From");
+				
 			}
 		}
 	}
-	
-		
-	}]]></script>
+	return;
+		}
+	else{
+		g_form.clearMessages();
+		g_form.clearValue('duration');
+		g_form.clearValue('date_from');
+		g_form.addErrorMessage("select the start date within fiscal quater");
+		return;
+	}
+		}	
+}]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-13 09:18:20</sys_created_on>
+        <sys_created_on>2018-05-24 15:48:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>a4ba9fbf37d55300b06c097973990e3c</sys_id>
-        <sys_mod_count>22</sys_mod_count>
-        <sys_name>Date From Validation</sys_name>
+        <sys_id>3dcc3f8ddb9693008252f6dfbf96190d</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Date Quater Validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>sys_script_client_a4ba9fbf37d55300b06c097973990e3c</sys_update_name>
+        <sys_update_name>sys_script_client_3dcc3f8ddb9693008252f6dfbf96190d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-13 10:34:09</sys_updated_on>
+        <sys_updated_on>2018-05-24 17:19:05</sys_updated_on>
         <table>x_172325_travel_ex_travel_expences_table</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

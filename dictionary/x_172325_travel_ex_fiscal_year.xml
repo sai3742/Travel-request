@@ -4,6 +4,6 @@
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element display="true" label="Fiscal Quarter" max_length="40" name="fiscal_year" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Fiscal Type" max_length="40" name="quarter" type="string"/>
-        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
     </element>
 </database>

@@ -2,13 +2,13 @@
 <database>
     <element label="Travel Expences Table" max_length="40" name="x_172325_travel_ex_travel_expences_table" type="collection">
         <element default="0" label="Air Fare" max_length="20" name="air_fare" type="currency"/>
-        <element display="true" label="Budget" max_length="32" name="budget" reference="x_172325_travel_ex_budget" type="reference"/>
+        <element label="Budget" max_length="32" name="budget" reference="x_172325_travel_ex_budget" type="reference"/>
         <element default="0" label="Car Rental" max_length="20" name="car_rental" type="currency"/>
-        <element label="Date From" max_length="40" name="date_from" type="glide_date"/>
-        <element label="Date Till" max_length="40" name="date_till" type="glide_date"/>
+        <element label="Date From" mandatory="true" max_length="40" name="date_from" type="glide_date"/>
+        <element label="Date Till" mandatory="true" max_length="40" name="date_till" type="glide_date"/>
         <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Duration" max_length="40" name="duration" read_only="true" type="integer"/>
-        <element label="Fiscal Year" max_length="40" name="fiscal_year" reference="x_172325_travel_ex_fiscal_year" type="reference"/>
+        <element label="Fiscal Year" mandatory="true" max_length="40" name="fiscal_year" reference="x_172325_travel_ex_fiscal_year" type="reference"/>
         <element default="0" label="Hotel" max_length="20" name="hotel" type="currency"/>
         <element label="Justification" max_length="100" name="justification" type="string"/>
         <element label="Location From" max_length="40" name="location_from" type="string"/>

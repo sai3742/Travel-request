@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Copy_Travel</action_name>
+        <action_name/>
         <active>true</active>
         <client>false</client>
         <comments/>
         <condition>current.state == '5'</condition>
-        <form_action>false</form_action>
-        <form_button>false</form_button>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_style/>
@@ -28,10 +28,11 @@ newRec.newRecord();
 newRec.requested_for=current.requested_for;
 newRec.requestor=current.requestor;
 newRec.state='1';
+newRec.fiscal_year=current.fiscal_year;
 newRec.project=current.project;
 newRec.location_from=current.location_from;
 newRec.location_to=current.location_to;
-newRec.fiscalu_year=current.fiscal_year;
+newRec.fiscal_year=current.fiscal_year;
 newRec.notes=current.notes;
 newRec.department=current.department;
 newRec.travel_reason=current.travel_reason;
@@ -53,7 +54,7 @@ action.setRedirectURL(newRec);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ebc4f0d9db2113008252f6dfbf9619f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>copy</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
@@ -61,7 +62,7 @@ action.setRedirectURL(newRec);]]></script>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_ui_action_ebc4f0d9db2113008252f6dfbf9619f7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-17 13:06:34</sys_updated_on>
+        <sys_updated_on>2018-05-20 18:02:39</sys_updated_on>
         <table>x_172325_travel_ex_travel_expences_table</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

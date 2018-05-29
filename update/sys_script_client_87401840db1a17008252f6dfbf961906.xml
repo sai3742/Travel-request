@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>date_till</field>
+        <global>true</global>
+        <messages/>
+        <name>Date Till validation</name>
+        <order>50</order>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading) {
+	  //g_form.clearValue('duration');
+      return;
+   }
+	 var strt = g_form.getValue('date_from');
+	var end = g_form.getValue('date_till');
+	if(end === ''){
+		g_form.clearValue('duration');
+		return;
+	}
+
+   //Type appropriate comment here, and begin script below
+  
+	if(strt!=""){
+			var ajax = new GlideAjax('AjaxDurCalc');
+			ajax.addParam('sysparm_name','durCalc');
+			ajax.addParam('sysparm_strt',strt);
+			ajax.addParam('sysparm_end',end);
+			ajax.getXML(duration1);
+			function duration1(response){
+				var answer = parseInt(response.responseXML.documentElement.getAttribute('answer'));
+				if(answer>0){
+					g_form.clearMessages();
+					g_form.setValue('duration',answer);
+						}
+				
+					else{
+						g_form.clearMessages();
+						g_form.clearValue('duration');
+						g_form.clearValue('date_till');
+						g_form.addErrorMessage("The Date Till must be after the Date From");
+						
+					}
+					
+				}
+			}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-20 19:58:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87401840db1a17008252f6dfbf961906</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Date Till validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+        <sys_update_name>sys_script_client_87401840db1a17008252f6dfbf961906</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-29 06:28:30</sys_updated_on>
+        <table>x_172325_travel_ex_travel_expences_table</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

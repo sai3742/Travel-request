@@ -6,7 +6,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_172325_travel_ex_travel_expences_table">state=4^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/>
+        <filter table="sysapproval_approver">source_table=x_172325_travel_ex_travel_expences_table^EQ<item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="x_172325_travel_ex_travel_expences_table"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>
@@ -14,31 +14,31 @@
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>My Rejected</mobile_title>
+        <mobile_title>UI</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_172325_travel_ex_travel_expences_table</name>
-        <order>900</order>
+        <name>sysapproval_approver</name>
+        <order/>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>x_172325_travel_ex.Travel_Manager</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-14 12:18:15</sys_created_on>
+        <sys_created_on>2018-05-18 09:27:27</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>5a7d4d9437e11300b06c097973990e2e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>My Rejected</sys_name>
+        <sys_id>068c6307db8e93008252f6dfbf9619a4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>My Aprovals UI</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
-        <sys_update_name>sys_app_module_5a7d4d9437e11300b06c097973990e2e</sys_update_name>
+        <sys_update_name>sys_app_module_068c6307db8e93008252f6dfbf9619a4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-19 11:16:45</sys_updated_on>
+        <sys_updated_on>2018-05-20 17:34:47</sys_updated_on>
         <timeline_page/>
-        <title>My Rejected</title>
+        <title>My Aprovals UI</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
