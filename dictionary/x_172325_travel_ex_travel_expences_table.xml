@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Travel Expences Table" max_length="40" name="x_172325_travel_ex_travel_expences_table" type="collection">
+    <element label="Travel Expenses Table" max_length="40" name="x_172325_travel_ex_travel_expences_table" type="collection">
         <element default="0" label="Air Fare" max_length="20" name="air_fare" type="currency"/>
         <element label="Budget" max_length="32" name="budget" reference="x_172325_travel_ex_budget" type="reference"/>
         <element default="0" label="Car Rental" max_length="20" name="car_rental" type="currency"/>
@@ -17,7 +17,7 @@
         <element label="Notes" max_length="40" name="notes" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element default="0" label="Others" max_length="20" name="others" type="currency"/>
-        <element label="Project" mandatory="true" max_length="40" name="project" reference="x_172325_travel_ex_project" type="reference"/>
+        <element label="Project" max_length="40" name="project" type="string"/>
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requestor" max_length="32" name="requestor" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element choice="3" default="1" label="State" max_length="40" name="state" read_only="true" type="choice">
@@ -45,18 +45,15 @@
             <element name="fiscal_year"/>
         </index>
         <index name="index2">
-            <element name="project"/>
-        </index>
-        <index name="index3">
             <element name="requested_for"/>
         </index>
-        <index name="index4">
+        <index name="index3">
             <element name="department"/>
         </index>
-        <index name="index5">
+        <index name="index4">
             <element name="requestor"/>
         </index>
-        <index name="index6">
+        <index name="index5">
             <element name="budget"/>
         </index>
     </element>

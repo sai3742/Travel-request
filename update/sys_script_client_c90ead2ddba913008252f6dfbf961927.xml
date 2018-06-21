@@ -35,9 +35,9 @@
         <sys_mod_count>6</sys_mod_count>
         <sys_name>Meals Change</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Travel Expences" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
+        <sys_package display_value="Travel Expenses" source="x_172325_travel_ex">a23a4c7b37115300b06c097973990e1c</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Travel Expences">a23a4c7b37115300b06c097973990e1c</sys_scope>
+        <sys_scope display_value="Travel Expenses">a23a4c7b37115300b06c097973990e1c</sys_scope>
         <sys_update_name>sys_script_client_c90ead2ddba913008252f6dfbf961927</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-05-20 14:31:03</sys_updated_on>
